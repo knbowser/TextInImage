@@ -5,7 +5,9 @@
 
 ----------Brief description of application architecture----------
 
-Important note: Application is not currently optimized.
+Important notes: 
+-Application is not currently optimized. 
+-Use an input .jpeg with dimensions less than or equal to 1000x1000.
 
 Application uses Python's Pillow (documentation @ https://pillow.readthedocs.io/en/latest/reference/index.html)
 as well as argparse (documentation @ https://docs.python.org/3/library/argparse.html).
