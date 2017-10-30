@@ -22,14 +22,14 @@ The input image used to encode a message should be a .jpeg image, and the applic
 
 2. Open command prompt and use as outlined below:
 
-Encode text from a file into a .jpeg image (exports encoded .png image):
+-Encode text from a file into a .jpeg image (exports encoded .png image):
 C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -inputFile C:\Python34\input_file.txt -outputImg C:\Python34\encoded_image.png
 
-Encode text from command prompt into a .jpeg image (exports encoded .png image):
+-Encode text from command prompt into a .jpeg image (exports encoded .png image):
 C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -txt "security is fun" -outputImg C:\Python34\encoded_image.png
 
-Decode a .png image, print to console + file:
+-Decode a .png image, print to console + file:
 C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png -outputFile C:\Python34\decoded_message.txt
 
-Decode a .png image, print to console only:
+-Decode a .png image, print to console only:
 C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png
