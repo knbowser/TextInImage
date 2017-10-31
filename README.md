@@ -1,6 +1,6 @@
 <b>K Bowser</b>
 <br>
-<b>CPSC 353-01 Fall 2017</b>
+<b>CPSC 353-01 Fall 2017 Project 1: Text In Image</b>
  <br>
 <b>Summoner name == pashmak</b>
 <br>
@@ -30,22 +30,22 @@ The message itself is embedded in each pixel after the message length, from the 
 
 <b>----------Instructions on how to execute application----------</b>
 
-1. Download textInImage.py and save it in desired location, for example in C:\Python34
+1. Download text_in_image.py and save it in desired location, for example in C:\Python34
 
 2. Open command prompt and use as outlined below:
 
 <b>-Encode text from a file into a .jpeg image (exports encoded .png image):</b>
 
-C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -inputFile C:\Python34\input_file.txt -outputImg C:\Python34\encoded_image.png
+C:\Python34\python.exe C:\Python34\text_in_image.py -opt encode -inputImg C:\Python34\input_image.jpg -inputFile C:\Python34\input_file.txt -outputImg C:\Python34\encoded_image.png
 
 <b>-Encode text from command prompt into a .jpeg image (exports encoded .png image):</b>
 
-C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -txt "security is fun" -outputImg C:\Python34\encoded_image.png
+C:\Python34\python.exe C:\Python34\text_in_image.py -opt encode -inputImg C:\Python34\input_image.jpg -txt "security is fun" -outputImg C:\Python34\encoded_image.png
 
 <b>-Decode a .png image, print to console + file:</b>
 
-C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png -outputFile C:\Python34\decoded_message.txt
+C:\Python34\python.exe C:\Python34\text_in_image.py -opt decode -inputImg C:\Python34\encoded_image.png -outputFile C:\Python34\decoded_message.txt
 
 <b>-Decode a .png image, print to console only:</b>
 
-C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png
+C:\Python34\python.exe C:\Python34\text_in_image.py -opt decode -inputImg C:\Python34\encoded_image.png
