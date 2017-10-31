@@ -11,7 +11,11 @@
 <b>----------Brief description of application architecture----------</b>
 
 Important notes: 
+<br>
+-Tested with Python 3.4.3
+<br>
 -Application is not currently optimized. 
+<br>
 -Use an input .jpeg with dimensions less than or equal to 1000x1000.
 
 Application uses Python's Pillow (documentation @ https://pillow.readthedocs.io/en/latest/reference/index.html)
