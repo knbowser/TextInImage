@@ -1,9 +1,14 @@
-#K Bowser
-#Summoner name == pashmak
-#Python 3.4.3
+<b>K Bowser</b>
+
+<b>CPSC 353-01 Fall 2017</b>
+ 
+<b>Summoner name == pashmak</b>
+
+<b>Python 3.4.3</b>
 
 
-----------Brief description of application architecture----------
+
+<b>----------Brief description of application architecture----------</b>
 
 Important notes: 
 -Application is not currently optimized. 
@@ -19,7 +24,7 @@ The message itself is embedded in each pixel after the message length, from the 
 
 
 
-----------Instructions on how to execute application----------
+<b>----------Instructions on how to execute application----------</b>
 
 1. Download textInImage.py and save it in desired location, for example in C:\Python34
 
