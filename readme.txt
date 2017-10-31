@@ -13,7 +13,8 @@ Application uses Python's Pillow (documentation @ https://pillow.readthedocs.io/
 as well as argparse (documentation @ https://docs.python.org/3/library/argparse.html).
 
 The input image used to encode a message should be a .jpeg image, and the application will export a .png image that is imbedded with the message bit length and message. 
-The message bit length and message are stored inside inside each RGB value of each pixel in the least significant bit of the RGB values. The application uses the first 11 pixels on the bottom right corner of the image to embed the message length. 
+The message bit length and message are stored inside inside each RGB value of each pixel in the least significant bit of the RGB values. 
+The application uses the first 11 pixels on the bottom right corner of the image to embed the message length. 
 The message itself is embedded in each pixel after the message length, from the bottom right to the top left.
 
 
