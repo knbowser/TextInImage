@@ -5,8 +5,7 @@
 
 from PIL import Image #Pillow documentation: https://pillow.readthedocs.io/en/latest/reference/index.html
 import argparse #argparse documentation: https://docs.python.org/3/library/argparse.html
-
-        
+     
 "Encode the image and export it as a .png (called by def main)" #encoding should be improved in a future version, currently it is *very* slow & inefficient
 def encode_image(input_img_file, text_to_encode, encoded_img_file): 
     
