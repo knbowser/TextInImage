@@ -30,18 +30,18 @@ The message itself is embedded in each pixel after the message length, from the 
 
 2. Open command prompt and use as outlined below:
 
--Encode text from a file into a .jpeg image (exports encoded .png image):
+<b>-Encode text from a file into a .jpeg image (exports encoded .png image):</b>
 
 C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -inputFile C:\Python34\input_file.txt -outputImg C:\Python34\encoded_image.png
 
--Encode text from command prompt into a .jpeg image (exports encoded .png image):
+<b>-Encode text from command prompt into a .jpeg image (exports encoded .png image):</b>
 
 C:\Python34\python.exe C:\Python34\textInImage.py -opt encode -inputImg C:\Python34\input_image.jpg -txt "security is fun" -outputImg C:\Python34\encoded_image.png
 
--Decode a .png image, print to console + file:
+<b>-Decode a .png image, print to console + file:</b>
 
 C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png -outputFile C:\Python34\decoded_message.txt
 
--Decode a .png image, print to console only:
+<b>-Decode a .png image, print to console only:</b>
 
 C:\Python34\python.exe C:\Python34\textInImage.py -opt decode -inputImg C:\Python34\encoded_image.png
