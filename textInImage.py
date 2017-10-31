@@ -6,36 +6,6 @@
 from PIL import Image #Pillow documentation: https://pillow.readthedocs.io/en/latest/reference/index.html
 import argparse #argparse documentation: https://docs.python.org/3/library/argparse.html
 
-
-def main():
-    
-    parser = argparse.ArgumentParser()
-    parser.add_argument("-opt", dest = 'option')
-    parser.add_argument('-inputImg', dest = 'input_img_filename')
-    parser.add_argument('-txt', dest = 'text')
-    parser.add_argument('-inputFile', dest = 'input_filename')
-    parser.add_argument('-outputFile', dest = 'output_filename')
-    parser.add_argument('-outputImg', dest = 'output_img_filename', default='C:\Python34\encoded_image.png')
-    args = parser.parse_args()
-
-    #Encode .jpeg image with data from a file
-    if (args.option == 'encode') and (args.input_filename):
-        with open(args.input_filename, 'r', newline = '', encoding= 'utf8') as myfile:
-            data = myfile.read()
-        encode_image(args.input_img_filename, data, args.output_img_filename) 
-
-    #Encode .jpeg image with console inputted text
-    if (args.option == 'encode') and (args.text):
-        encode_image(args.input_img_filename, args.text, args.output_img_filename) 
-
-    #Decode a .png image, prints decoded message to the console as well as to a file specified by args.output_filename
-    if (args.option == 'decode') and (args.output_filename):
-        decode_image(args.input_img_filename, args.output_filename) 
-
-    #Decode a .png image, just prints the decoded message to the console
-    if (args.option == 'decode') and (args.output_filename==None) :
-        decode_image(args.input_img_filename, args.output_filename) 
-
         
 "Encode the image and export it as a .png (called by def main)" #encoding should be improved in a future version, currently it is *very* slow & inefficient
 def encode_image(input_img_file, text_to_encode, encoded_img_file): 
@@ -195,6 +165,36 @@ def decode_text(img_data, bitstring, num_bits, out_file):
         f = open(out_file, 'w', newline = '', encoding='utf8')
         f.write(decoded_text) #Write the decoded message to the file
 
-   
+
+def main():
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-opt", dest = 'option')
+    parser.add_argument('-inputImg', dest = 'input_img_filename')
+    parser.add_argument('-txt', dest = 'text')
+    parser.add_argument('-inputFile', dest = 'input_filename')
+    parser.add_argument('-outputFile', dest = 'output_filename')
+    parser.add_argument('-outputImg', dest = 'output_img_filename', default='C:\Python34\encoded_image.png')
+    args = parser.parse_args()
+
+    #Encode .jpeg image with data from a file
+    if (args.option == 'encode') and (args.input_filename):
+        with open(args.input_filename, 'r', newline = '', encoding= 'utf8') as myfile:
+            data = myfile.read()
+        encode_image(args.input_img_filename, data, args.output_img_filename) 
+
+    #Encode .jpeg image with console inputted text
+    if (args.option == 'encode') and (args.text):
+        encode_image(args.input_img_filename, args.text, args.output_img_filename) 
+
+    #Decode a .png image, prints decoded message to the console as well as to a file specified by args.output_filename
+    if (args.option == 'decode') and (args.output_filename):
+        decode_image(args.input_img_filename, args.output_filename) 
+
+    #Decode a .png image, just prints the decoded message to the console
+    if (args.option == 'decode') and (args.output_filename==None) :
+        decode_image(args.input_img_filename, args.output_filename)
+        
+        
 if __name__ == '__main__':
     main()
