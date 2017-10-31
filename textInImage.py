@@ -1,4 +1,4 @@
-#Karissa Bowser
+#K Bowser
 #Summoner name == pashmak
 #CS 353-01 Fall 2017 Project 1
 #Python 3.4.3
