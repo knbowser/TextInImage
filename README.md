@@ -1,12 +1,12 @@
 <b>K Bowser</b>
-
+<br>
 <b>CPSC 353-01 Fall 2017</b>
- 
+ <br>
 <b>Summoner name == pashmak</b>
-
+<br>
 <b>Python 3.4.3</b>
 
-
+<br>
 
 <b>----------Brief description of application architecture----------</b>
 
@@ -22,7 +22,7 @@ The message bit length and message are stored inside inside each RGB value of ea
 The application uses the first 11 pixels on the bottom right corner of the image to embed the message length. 
 The message itself is embedded in each pixel after the message length, from the bottom right to the top left.
 
-
+<br>
 
 <b>----------Instructions on how to execute application----------</b>
 
