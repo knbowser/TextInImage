@@ -1,5 +1,6 @@
-#K Bowser
+#Karissa Bowser
 #Summoner name == pashmak
+#knb@csu.fullerton.edu
 #CS 353-01 Fall 2017 Project 1 Text In Image
 #Python 3.4.3
 
