@@ -1,8 +1,6 @@
 <b>K Bowser</b>
 <br>
 <b>CPSC 353-01 Fall 2017 Project 1: Text In Image</b>
- <br>
-<b>Summoner name == pashmak</b>
 <br>
 <b>Python 3.4.3</b>
 
